@@ -33,7 +33,7 @@ public:
 
     /* Simple wrapper for WriteProcessMemory.
      address - Pointer to base address to which data is written.
-     buffer - Pointer to a buffer that receives the contents of the specified address.
+     buffer - Pointer to a buffer containing the bytes to write to the specified address.
      size - Number of bytes to read from the specified address.
      Returns 0 on fail.*/
     BOOL write(LPVOID address, LPCVOID buffer, SIZE_T size); 
