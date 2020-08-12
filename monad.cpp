@@ -8,15 +8,6 @@
 #pragma comment(lib, "Psapi.lib")
 #define DPSAPI_VERSION (1)
 
-/*************************
-Proof-of-Concept. Now pulls a (address, value) pair from a file called modad.mod,
-then writes the value to runtime memory.
-
-Modad.mod is a text file with two DWORD-sized hexidecimal numbers separated by a space.
-The first DWORD is the RVA from the image base. The second is an AOB (in big-endian) used to patch the given address.
-Very limiting right now without editing the source, still very much a POC.
-************************/
-
 MiddleMan::MiddleMan(wchar_t* ProcessName) 
 {
     if (!(ddHandle = GetProcessByName(ProcessName))) {
