@@ -1,5 +1,5 @@
 # Modad
-monad is a c++ library that hooks into the memory space of Devil Daggers and offers a runtime read/write API.
+monad is a c++ library that hooks into the memory space of Devil Daggers and offers a runtime read/write API. The focus of this project is on Devil Daggers, but the implementation is currently general enough to be used for just about any program with some fiddling.
 
 Modad is a wrapper for the monad library to provide an easy interface for developers and modders to create distributable changes to object values in Devil Daggers.
 A .mod file lists address RVAs and bytes to write to them. Running Modad with Devil Daggers running will read all .mod files in a ./mod subdirectory and adjust Devil Dagger's runtime addresses appropriately.
